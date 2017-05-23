@@ -103,3 +103,16 @@ a {
   font-size: 40px;
   font-weight: 800;
 }
+
+.reset {
+  border: none;
+  background: transparent;
+  color: #d0021b;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.reset:hover {
+  cursor: pointer;
+}
