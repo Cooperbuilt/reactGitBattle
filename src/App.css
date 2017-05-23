@@ -1,0 +1,105 @@
+body {
+  font-family: helvetica;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #b0021b;
+}
+
+.languages {
+  display: flex;
+  justify-content: center;
+}
+
+.languages li {
+  margin: 10px;
+  cursor: pointer;
+  transition: all .3s cubic-bezier(.3, .5, .8, 1);
+}
+
+.popular-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.popular-item {
+  margin: 20px;
+  text-align: center;
+}
+
+.space-list-items {
+  margin-bottom: 7px;
+}
+
+.avatar {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.nav {
+  display: flex;
+  margin-left: 10px;
+}
+
+.nav li {
+  margin-right: 14px;
+}
+
+.active {
+  font-weight: bold;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button {
+  color: white;
+  background: black;
+  padding: 10px;
+}
+
+.row {
+  display: flex;
+  margin-top: 25%;
+  justify-content: space-around;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  align-items: center;
+}
+
+.column input {
+  border-radius: 3px;
+  margin: 10px 0;
+  padding: 5px;
+  border: 1px solid black;
+  font-size: 16px;
+  width: 80%;
+}
+
+.header {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+}
