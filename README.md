@@ -1,4 +1,4 @@
-##Git 'Battle' React App
+## Git 'Battle' React App
 
 A fun side project made while working with the reacttraining courses. 
 
