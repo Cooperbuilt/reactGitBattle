@@ -4,6 +4,7 @@ import './../App.css';
 import Nav from './nav.js';
 import Home from './home.js';
 import Battle from './Battle.js';
+import Results from './results.js';
 var ReactRouter = require('react-router-dom');
 
 var Router = ReactRouter.BrowserRouter;
@@ -18,6 +19,7 @@ class App extends Component {
         <div className='container'> 
           <Nav />
           <Switch >
+          	<Route path='/battle/results' component={Results} />
           	<Route exact path='/' component= {Home} />
           	<Route exact path='/popular' component= {Popular} />
 		  	<Route path='/battle' component= {Battle} />
