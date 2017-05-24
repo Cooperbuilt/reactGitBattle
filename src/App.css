@@ -1,9 +1,8 @@
 
-@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker|Roboto');
 
 body {
-  font-family: helvetica;
-  background: #1C343F;
+  background: #0F0B19;
 }
 
 html {
@@ -28,16 +27,13 @@ body {
   top: 0;
   left: 0;
   margin-top: 0;
-  background: rgba(255, 255, 255, 0.9);
-  -webkit-box-shadow: inset 0px -5px 4px -1px rgba(0,0,0,0.75);
-  -moz-box-shadow: inset 0px -5px 4px -1px rgba(0,0,0,0.75);
-  box-shadow: inset 0px -5px 4px -1px rgba(0,0,0,0.75);
-  height: 5rem;
+  background: transparent;
+  height: 4.2rem;
   width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  font-family: 'Permanent Marker', cursive;;
+  font-family: 'Permanent Marker', cursive;
 }
 
 .nav li {
@@ -53,7 +49,7 @@ body {
   bottom: 0;
   left: 0;
   width: 0%;
-  border-bottom: 2px solid #b0021b;
+  border-bottom: 2px solid #A33ACB;
   transition: 0.4s;
 }
 
@@ -62,7 +58,7 @@ body {
 }
 
 .active {
-  border-top: 2px solid #b0021b;
+  border-top: 2px solid #A33ACB;
 }
 
 li {
@@ -71,8 +67,39 @@ li {
 
 a {
   text-decoration: none;
-  color: #b0021b;
+  color: white;
 }
+
+
+.home-container {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#git {
+  font-family: 'Roboto', serif;
+  color: white;
+  font-weight: 100;
+  font-size: 6rem;
+}
+
+#battle {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 8rem;
+  color: #A33ACB;
+
+}
+
+
+.intro {
+  font-size: 1.4rem;
+  color: white;
+  text-align: center;
+}
+
 
 .languages {
   display: flex;
@@ -105,17 +132,12 @@ a {
   border-radius: 50%;
 }
 
-
-.home-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .button {
   color: white;
-  background: black;
-  padding: 10px;
+  background: #4717F6;
+  padding: 1% 6%;
+  font-size: 1.8rem;
+  font-family: 'Permanent Marker', cursive;
 }
 
 .row {
