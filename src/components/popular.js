@@ -9,8 +9,9 @@ function SelectLanguage (props) {
     <ul className='languages'>
       {languages.map(function (lang) {
         return (
+
           <li
-            style={lang === props.selectedLanguage ? {color: '#d0021b'} : null}
+            style={lang === props.selectedLanguage ? {color: '#4717F6'} : null}
             onClick={props.onSelect.bind(null, lang)}
             key={lang}>
               {lang}
@@ -36,7 +37,7 @@ function RepoGrid (props) {
                   alt={'Avatar for ' + repo.owner.login}
                 />
               </li>
-              <li><a href={repo.html_url}>{repo.name}</a></li>
+              <li><a className = "profile-link" href={repo.html_url}>{repo.name}</a></li>
               <li>@{repo.owner.login}</li>
               <li>{repo.stargazers_count} stars</li>
             </ul>

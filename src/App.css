@@ -1,13 +1,11 @@
 
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker|Roboto');
 
-body {
-  background: #0F0B19;
-}
 
 html {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -27,20 +25,22 @@ body {
   top: 0;
   left: 0;
   margin-top: 0;
-  background: transparent;
-  height: 4.2rem;
+  background: #0F0B19;
+  height: 4rem;
   width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
   font-family: 'Permanent Marker', cursive;
+  -webkit-box-shadow: inset 0px -7px 13px 0px rgba(250,245,250,1);
+-moz-box-shadow: inset 0px -7px 13px 0px rgba(250,245,250,1);
+box-shadow: inset 0px -7px 13px 0px rgba(250,245,250,1);
 }
 
 .nav li {
-  font-size: 2rem;
-  margin-left: -80px;
+  font-size: 1.4rem;
   position: relative;
-  transition: border-top .5s cubic-bezier(.3, .5, .3. 1);
+  transition-timing-function: ease-in-out;
 }
 
 .nav li:after {
@@ -51,10 +51,11 @@ body {
   width: 0%;
   border-bottom: 2px solid #A33ACB;
   transition: 0.4s;
+  margin-left: 20px;
 }
 
 .nav li:hover:after {
-  width: 100%;
+  width: 80%;
 }
 
 .active {
@@ -63,11 +64,21 @@ body {
 
 li {
   list-style-type: none;
+  padding-left: 20px;
 }
 
 a {
   text-decoration: none;
   color: white;
+}
+
+.profile-link {
+  color: #4717F6;
+  font-size: 1.2rem;
+}
+
+.profile-link:hover {
+  color: #A33ACB;
 }
 
 
@@ -77,33 +88,52 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  max-width: 1200px;
+}
+
+#title-container {
+  display: flex;
+  margin-top: 2%;
 }
 
 #git {
   font-family: 'Roboto', serif;
-  color: white;
+  color: black;
   font-weight: 100;
-  font-size: 6rem;
+  font-size: 5rem;
+  text-decoration: underline;
+
 }
 
 #battle {
   font-family: 'Permanent Marker', cursive;
-  font-size: 8rem;
+  font-size: 9rem;
   color: #A33ACB;
-
+  margin-left: 20px;
+  transform: translateY(-30px);
 }
 
 
 .intro {
-  font-size: 1.4rem;
-  color: white;
+  font-size: 1.3rem;
+  color: black;
   text-align: center;
+}
+
+.intro span {
+  font-size: .5rem;
 }
 
 
 .languages {
   display: flex;
   justify-content: center;
+  margin-top: 10%;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  font-size: 1.4rem;
 }
 
 .languages li {
@@ -112,23 +142,44 @@ a {
   transition: all .3s cubic-bezier(.3, .5, .8, 1);
 }
 
+.popular-rank {
+  margin-left: 15px;
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
 .popular-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  text-align: center;
+
 }
 
 .popular-item {
-  margin: 20px;
+  margin: 20px 0;
   text-align: center;
+  text-align: center;
+  padding-right: 40px;
+  box-sizing: border-box;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.popular-item:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .space-list-items {
-  margin-bottom: 7px;
+  margin-bottom: 15px;
+}
+
+.space-list-items li {
+  padding-bottom: 10px;
 }
 
 .avatar {
-  width: 150px;
+  width: 200px;
   border-radius: 50%;
 }
 
@@ -138,6 +189,34 @@ a {
   padding: 1% 6%;
   font-size: 1.8rem;
   font-family: 'Permanent Marker', cursive;
+  margin-top: 2%;
+  transition: all .3s cubic-bezier(.36,.07,.19,.97);
+}
+
+.button:hover {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+  background: red;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
 }
 
 .row {
