@@ -102,7 +102,7 @@ class Results extends React.Component {
     }
 
     return (
-      <div className='row'>
+      <div className='row1'>
         <Player
           label='Winner'
           score={winner.score}

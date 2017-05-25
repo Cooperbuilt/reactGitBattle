@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import api from '../utils/api';
 import Loading from './loading.js';
+import Image from './image.js';
 
 function SelectLanguage (props) {
   var languages = ['All', 'JavaScript', 'Ruby', 'Java', 'CSS', 'Python'];

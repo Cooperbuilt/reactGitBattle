@@ -2,9 +2,8 @@ import React, { Component } from 'react';
 import './../App.css';
 import PropTypes from 'prop-types';
 import PlayerPreview from './playerpreview.js'
+
 var Link = require('react-router-dom').Link;
-
-
 
 class PlayerInput extends React.Component {
   constructor(props) {
@@ -34,19 +33,21 @@ class PlayerInput extends React.Component {
     );
   }
   render() {
+    
     return (
+
       <form className='column' onSubmit={this.handleSubmit}>
         <label className='header' htmlFor='username'>{this.props.label}</label>
         <input
           id='username'
-          placeholder='github username'
+          placeholder='Enter Github Username'
           type='text'
           value={this.state.username}
           autoComplete='off'
           onChange={this.handleChange}
         />
         <button
-          className='button'
+          className='button2'
           type='submit'
           disabled={!this.state.username}>
             Submit
@@ -143,7 +144,7 @@ class Battle extends React.Component {
 
         {playerOneImage && playerTwoImage &&
           <Link
-            className='button'
+            className='button3'
             to={{
               pathname: match.url + '/results',
               search: '?playerOneName=' + playerOneName + '&playerTwoName=' + playerTwoName

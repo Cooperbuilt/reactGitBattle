@@ -9,7 +9,6 @@ class Home extends Component {
 			<div className='home-container'>
 				<div id="title-container"><span id="git">GitHub</span> <span id="battle">Battle</span></div>
 
-				<p className="intro">&#10004; <strike>completely</strike> useless app!</p>
 				<p className="intro">&#10004; 'Battle' two git profiles! **</p> 
 				<p className="intro">&#10004; See most popular repos in multiple languages! **</p> 
 				<Link className='button' to="/battle">
@@ -18,7 +17,7 @@ class Home extends Component {
 
 				 <p className="intro"><span>
 				** The entire thing could fall apart as soon as I hit my git api rate limit<br/>
-				Built w/ reacttraining tutorial, converted to es6 with the create-react-app, styled by me. </span>
+				Built w/ reacttraining tutorial, converted to es6 with the create-react-app, ~lightly~ styled by me. </span>
 				</p>
 			</div>
 		)

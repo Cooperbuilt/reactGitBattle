@@ -98,6 +98,8 @@ a {
   margin-top: 2%;
 }
 
+
+
 #git {
   font-family: 'Roboto', serif;
   color: black;
@@ -112,7 +114,25 @@ a {
   font-size: 9rem;
   color: #A33ACB;
   margin-left: 20px;
-  transform: translateY(-30px);
+  transform: translateY(-60px);
+}
+
+@media only screen and (max-width: 810px) {
+
+    #title-container {
+      display: flex;
+      flex-direction: column;
+      margin-top: 15%;
+    }
+
+     #git {
+      font-size: 4rem;
+     }
+
+     #battle {
+      font-size: 6rem;
+      transform: translateY(0px);
+     }
 }
 
 
@@ -136,10 +156,24 @@ a {
   font-size: 1.4rem;
 }
 
+
+
 .languages li {
   margin: 10px;
   cursor: pointer;
   transition: all .3s cubic-bezier(.3, .5, .8, 1);
+}
+
+@media only screen and (max-width: 640px) {
+  .languages {
+    font-size: 1rem;
+    margin-top: 15%;
+  }
+
+  .languages li {
+    margin: 10px 1px;
+  }
+
 }
 
 .popular-rank {
@@ -172,6 +206,7 @@ a {
 
 .space-list-items {
   margin-bottom: 15px;
+  text-align: center;
 }
 
 .space-list-items li {
@@ -201,6 +236,46 @@ a {
   background: red;
 }
 
+.button2 {
+  color: white;
+  background: #4717F6;
+  padding: 1% 6%;
+  font-size: 1.8rem;
+  font-family: 'Permanent Marker', cursive;
+  margin-top: 2%;
+  transition: all .3s cubic-bezier(.36,.07,.19,.97);
+  width: 30%;
+}
+
+.button2:hover {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+  background: red;
+}
+
+.button3 {
+  color: white;
+  background: #4717F6;
+  padding: 1% 6%;
+  font-size: 1.8rem;
+  font-family: 'Permanent Marker', cursive;
+  margin-top: 2%;
+  transition: all .3s cubic-bezier(.36,.07,.19,.97);
+  width: 30%;
+  margin-left: 38%;
+  margin-top: 20px;
+}
+
+.button3:hover {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+  background: red;
+}
+
 @keyframes shake {
   10%, 90% {
     transform: translate3d(-1px, 0, 0);
@@ -221,39 +296,58 @@ a {
 
 .row {
   display: flex;
-  margin-top: 25%;
+  margin-top: 15%;
+  justify-content: space-around;
+}
+
+.row1 {
+  display: flex;
+  margin-top: 1%;
   justify-content: space-around;
 }
 
 .column {
   display: flex;
   flex-direction: column;
-  width: 500px;
+  width: 50%;
   align-items: center;
+  justify-content: center;
+  margin-left: 60px;
 }
 
 .column input {
   border-radius: 3px;
   margin: 10px 0;
-  padding: 5px;
+  padding: 20px 40px;
   border: 1px solid black;
   font-size: 16px;
-  width: 80%;
+  width: 60%;
 }
 
+input::placeholder {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 1.4rem;
+}
+
+
+
 .header {
+  font-family: 'Permanent Marker', cursive;
   text-align: center;
-  font-size: 40px;
+  font-size: 5rem;
+  margin-bottom: 4%;
   font-weight: 800;
+  color: #A33ACB;
 }
 
 .reset {
   border: none;
   background: transparent;
-  color: #d0021b;
+  color: #4717F6;
   display: block;
   width: 100%;
-  text-align: center;
+  text-align: left;
+  font-size: 1.4rem;
 }
 
 .reset:hover {
